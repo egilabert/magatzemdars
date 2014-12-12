@@ -1,0 +1,1 @@
+C:\xampp\htdocs\magars\app/views/cites/show.blade.php
