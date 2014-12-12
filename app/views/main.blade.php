@@ -2,7 +2,7 @@
 
 
 @section('title')
-	Benvinguts a Magatzem d'ars
+	Benvinguts al Magatzem d'ars
 @stop
 
 
