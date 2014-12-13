@@ -39,7 +39,9 @@ class SessionsController extends \BaseController {
 			return Redirect::intended("/"); //url.intended
 		}
 
-		return Redirect::back()->withInput()->withFlashMessage('Les credencials introduídes no són vàlides');
+		Flash::danger('Les credencials introduïdes no són vàlides');
+
+		return Redirect::back()->withInput();
 
 	}
 

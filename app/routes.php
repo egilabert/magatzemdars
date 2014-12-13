@@ -54,6 +54,10 @@ Route::resource('consums', 'ConsumsController');
 Route::resource('incidencies', 'IncidenciesController');
 Route::resource('observacions', 'ObservacionsController');
 
+#Remember password
+
+Route: Route::controller('password', 'RemindersController');
+
 
 
 

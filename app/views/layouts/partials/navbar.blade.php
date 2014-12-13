@@ -50,9 +50,6 @@
                   ), null,['class'=>'form-control btn btn-default dropdown-toggle', 'required' => 'required', 'id'=>'client_filter']); 
                 }}
                 <?php Javascript::put(['client_filter' => Request::get('search_key')])?>    
-  			           {{--@if ($user->hasRole('owner') or $user->hasRole('administrator'))
-  				         	<li><a href="#">Treballadors</a></li>
-  						      @endif--}}
   			      </div><!-- /btn-group -->
           		<div class="form-group">
           			{{Form::input('search', 'q', null, ['class' => 'form-control','placeholder' => 'Search...'])}}
@@ -63,7 +60,7 @@
   				</div><!-- /input-group -->
         	{{ Form::close() }}
           <ul class="nav navbar-nav navbar-right">
-            @if ((Auth::user()->hasRole('Direcció')) or (Auth::user()->hasRole('Administrador')) or (Auth::user()->hasRole('Propietari')))
+            @if (!(Auth::user()->hasRole('Membre')))
                 <li><a href="{{ route('users.index') }}">Treballadors</a></li>
             @endif
             <li><a href="/clients">Clients</a></li>
@@ -78,7 +75,7 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="https://es-es.facebook.com/Magatzemdars" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
             <li><a href="https://www.youtube.com/user/MAGATZEMDARS" target="_blank"><i class="fa fa-youtube fa-2x"></i></a></li>
-            <li><a href="clients"><i class="fa fa-user fa-2x" target="_blank"></i></a></li>
+            <li><a href="/clients"><i class="fa fa-user fa-2x" target="_blank"></i></a></li>
           </ul>
         </div>
         @endif

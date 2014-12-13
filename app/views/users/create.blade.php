@@ -35,7 +35,7 @@
 
 			<div class="form-group">
 				{{Form::label('email','Email: ')}}
-				{{Form::text('email', null, ['class'=>'form-control', 'required' => 'required'])}}
+				{{Form::email('email', null, ['class'=>'form-control', 'required' => 'required'])}}
 				<div class="error_basic"> {{ $errors->first('email') }} </div>
 			</div>
 

@@ -888,9 +888,10 @@ smallest {
 .flash {
   display: inline-block;
   position: absolute;
-  top: 15px;
+  bottom: 15px;
   right: 15px;
   z-index: 100;
+  width: auto;
   /*display: none;*/
 }
 
