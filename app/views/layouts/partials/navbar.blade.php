@@ -48,8 +48,9 @@
                   '8' => 'Programadors',
                   '9' => 'Teatres',
                   '10' => 'Treballadors',
-                  ), null,['class'=>'form-control btn btn-default dropdown-toggle', 'required' => 'required']); 
-                }}    
+                  ), null,['class'=>'form-control btn btn-default dropdown-toggle', 'required' => 'required', 'id'=>'client_filter']); 
+                }}
+                <?php Javascript::put(['client_filter' => Request::get('search_key')])?>    
   			           {{--@if ($user->hasRole('owner') or $user->hasRole('administrator'))
   				         	<li><a href="#">Treballadors</a></li>
   						      @endif--}}

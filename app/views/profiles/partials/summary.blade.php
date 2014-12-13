@@ -4,14 +4,15 @@
 		<div class="consum col-md-6">
 			
 				<div class="row">
-					<div class="col-md-5"><big>Comunicacions</big></div>
-					<div class="col-md-3">
+					<div class="col-md-4"><big>Comunicacions</big></div>
+					<div class="col-md-4">
 						<div class="dropdown">
 							
 								{{ Form::open([
 					        		'method' => 'GET',
 					        		'role' => 'search',
-					            	'route' => ['profiles.show', 'id' => $user->username]
+					            	'route' => ['profiles.show', 'id' => $user->username],
+					            	'id' => 'acumulats'
 					        	]) }}
 
 				        	<div class="input-group-btn">
@@ -20,9 +21,9 @@
 				                  '1' => 'Aquesta setmana',
 				                  '2' => 'Aquest mes',
 				                  '3' => 'Aquest any',
-				                  '4' => 'Següent semana',
+				                  '4' => 'Següent setmana',
 				                  '5' => 'Següent mes',
-				                  ), null,['class'=>'form-control btn btn-default dropdown-toggle', 'required' => 'required']); 
+				                  ), null,['class'=>'form-control btn btn-default dropdown-toggle', 'required' => 'required', 'id'=>'com_filter']); 
 				                }} 
 							</div>
 						</div>
@@ -74,7 +75,7 @@
 		<div class="incidencies col-md-5">
 			<div class="row">
 				<div class="col-md-5"><big>Consums generats</big></div>
-				<div class="col-md-3">
+				<div class="col-md-4">
 					<div class="dropdown">
 						
 			        	<div class="input-group-btn">
@@ -83,12 +84,12 @@
 			                  '1' => 'Aquesta setmana',
 			                  '2' => 'Aquest mes',
 			                  '3' => 'Aquest any',
-			                  ), null,['class'=>'form-control btn btn-default dropdown-toggle', 'required' => 'required']); 
+			                  ), null,['class'=>'form-control btn btn-default dropdown-toggle', 'required' => 'required', 'id'=>'con_filter']); 
 			                }} 
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-3">
 					<big class="pull-right">Total: {{money($user->consums->sum('preu'))}}</big>
 				</div>
 			</div>
@@ -136,5 +137,6 @@
 		{{ Form::submit('Veure dades', ['class'=>'btn btn-primary']) }}
 		{{ Form::close() }}
 	</div>
+	<div class="feed"></div>
 	<?php Javascript::put(['com_filter' => Request::get('com_filter'), 'con_filter' => Request::get('con_filter')])?>
 </div>

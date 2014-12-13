@@ -284,12 +284,39 @@ $(document).ready(function(){
         $('#new_cita').fadeToggle(1000);
     });
 
-    /*if (typeof obj.tab != 'undefined') {
-        $('.active_tab').html() = tab;
-    } else {
-        var tab = 'no hi ha valor';
-        $('.active_tab').html() = tab;
-    }*/
+    if (magars.com_filter != null) {
+
+        $("#com_filter").val(magars.com_filter);
+    }
+    
+    if (magars.con_filter != null) {
+
+        $("#con_filter").val(magars.con_filter);
+    }
+
+    if (magars.client_filter != null) {
+
+        $("#client_filter").val(magars.client_filter);
+    }
+
+    $("#com_filter").change(
+    function(){
+         //$(this).closest('form').trigger('submit');
+
+         $('#acumulats').trigger('submit');
+         /*   or:
+         $('#acumulats').submit();
+         */
+    });
+    $("#con_filter").change(
+    function(){
+         //$(this).closest('form').trigger('submit');
+         
+         $('#acumulats').trigger('submit');
+         /*   or:
+         $('#acumulats').submit();
+         */
+    });
 
 
 // -----------------------------------------------------------//
