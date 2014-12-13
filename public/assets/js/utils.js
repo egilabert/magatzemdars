@@ -284,22 +284,12 @@ $(document).ready(function(){
         $('#new_cita').fadeToggle(1000);
     });
 
-    // Javascript to enable link to tab
-    /*var url = document.location.toString();
-    if (url.match('#')) {
-        $('.nav-tabs a[href=#'+url.split('#')[1]+']').tab('show') ;
-    } 
-
-    // Change hash for page-reload
-    $('.nav-tabs a').on('shown', function (e) {
-        window.location.hash = e.target.hash;
-    })*/
-
-    
-    if (location.hash !== '') $('a[href="' + location.hash + '"]').tab('show');
-    return $('a[data-toggle="tab"]').on('shown', function(e) {
-      return location.hash = $(e.target).attr('href').substr(1);
-    });
+    /*if (typeof obj.tab != 'undefined') {
+        $('.active_tab').html() = tab;
+    } else {
+        var tab = 'no hi ha valor';
+        $('.active_tab').html() = tab;
+    }*/
 
 
 // -----------------------------------------------------------//

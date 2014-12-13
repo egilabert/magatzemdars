@@ -74,8 +74,7 @@ class ClientsController extends \BaseController {
 	{
 
 		$client = $this->clientsRepo->findOrderedSubfields($id, 'created_at', 'DESC');
-		$tab = 'comunicacions';
-		return View::make('clients.show', compact('client', 'tab'));
+		return View::make('clients.show', compact('client'));
 	}
 
 	/**

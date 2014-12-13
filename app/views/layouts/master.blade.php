@@ -37,6 +37,8 @@
 
 			</div>
 
+			@include('layouts.partials.copyright')
+
 		</footer>
 
 

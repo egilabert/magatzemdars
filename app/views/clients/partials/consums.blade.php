@@ -30,7 +30,7 @@
 							), null,['class'=>'form-control', 'required' => 'required']); }}
 					</td>
 					
-					<td> {{ Form::text('preu', null, ['class'=>'form-control', 'placeholder' => 'Preu...', 'required' => 'required']); }} 
+					<td> {{ Form::number('preu', null, ['class'=>'form-control', 'placeholder' => 'Preu...', 'required' => 'required']); }} 
 						{{ errors_for('preu', $errors)}}
 					</td>
 					<td>{{ Form::text('observacions', null, ['class'=>'form-control', 'placeholder' => 'Observacions...', 'required' => 'required']); }} 

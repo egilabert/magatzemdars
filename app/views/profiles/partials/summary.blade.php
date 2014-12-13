@@ -2,59 +2,68 @@
 
 	<div class="row">
 		<div class="consum col-md-6">
-			<div class="main_table">
+			
 				<div class="row">
-				
-				<div class="dropdown">
-				<big>Comunicacions</big>
-				{{ Form::open([
-	        		'method' => 'GET',
-	        		'role' => 'search',
-	            	//'url' => '/clients/'
-	        	]) }}
+					<div class="col-md-5"><big>Comunicacions</big></div>
+					<div class="col-md-3">
+						<div class="dropdown">
+							
+								{{ Form::open([
+					        		'method' => 'GET',
+					        		'role' => 'search',
+					            	'route' => ['profiles.show', 'id' => $user->username]
+					        	]) }}
 
-	        	<div class="input-group-btn">
-                {{ Form::select('search_key', array(
-                  '0' => 'Avui', 
-                  '1' => 'Aquesta setmana',
-                  '2' => 'Aquest mes',
-                  '3' => 'Aquest any',
-                  ), null,['class'=>'form-control btn btn-default dropdown-toggle', 'required' => 'required']); 
-                }} 
-				{{ Form::close() }}
-				<big class="pull-right">{{ count($user->consums)}} comunicacions</big>
+				        	<div class="input-group-btn">
+				                {{ Form::select('com_filter', array(
+				                  '0' => 'Avui', 
+				                  '1' => 'Aquesta setmana',
+				                  '2' => 'Aquest mes',
+				                  '3' => 'Aquest any',
+				                  '4' => 'Següent semana',
+				                  '5' => 'Següent mes',
+				                  ), null,['class'=>'form-control btn btn-default dropdown-toggle', 'required' => 'required']); 
+				                }} 
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<big class="pull-right">{{ count($user->comunicacions)}} comunicacions</big>
+					</div>
 				</div>
-				</div>
+				<div class="row">
+					@if (count($user->comunicacions)==0)
+						
+						<p>No s'han generat comunicacions en aquest període</p>
 
-				@if (count($user->consums)==0)
-					
-					<p>No s'han generat comunicacions en aquest període</p>
-
-				@else 
-					<table class="table">
-						<thead>
-							<tr>
-								<th>Tipus</th>
-								<th>Data</th>
-								<th>Observacions</th>
-							</tr>
-						</thead>
-						<tbody>
-							@foreach ($user->comunicacions as $comunicacio)
-								<tr class='clickableRow' data-url="#">
-									<td>{{ $comunicacio->tipus }}</td>
-									<td>{{ $comunicacio->hora_progamada->diffForHumans() }}</td>
-									<td>{{ $comunicacio->observacions }}</td>
+					@else 
+					<div class="main_table">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>Tipus</th>
+									<th>Data</th>
+									<th>Client</th>
+									<th>Observacions</th>
 								</tr>
-							@endforeach
-						</tbody> 
-					</table>
-
-				@endif
-				<div class="text-center">
-					{{--$client->appends(Request::except('page'))->links()--}}
+							</thead>
+							<tbody>
+								@foreach ($user->comunicacions as $comunicacio)
+									<tr class='clickableRow' data-url="#">
+										<td>{{ $comunicacio->tipus }}</td>
+										<td>{{ $comunicacio->hora_progamada }}</td>
+										<td>{{ $comunicacio->comunicable->name }}</td>
+										<td>{{ $comunicacio->observacions }}</td>
+									</tr>
+								@endforeach
+							</tbody> 
+						</table>
+					</div>
+					@endif
+					<div class="text-center">
+						{{--$client->appends(Request::except('page'))->links()--}}
+					</div>
 				</div>
-			</div>
 		</div>
 	
 	
@@ -63,58 +72,69 @@
 		</div>
 
 		<div class="incidencies col-md-5">
-			<div class="main_table">
-				<div class="row">
-				
-				<div class="dropdown">
-				<big>Consums generats</big>
-				  <button class="btn btn-default dropdown-toggle" type="button" id="FiltreConsums" data-toggle="dropdown" aria-expanded="true">
-				    Període
-				    <span class="caret"></span>
-				  </button>
-				  <ul class="dropdown-menu" role="menu" aria-labelledby="FiltreConsums">
-				  	<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Avui</a></li>
-				    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Aquesta setmana</a></li>
-				    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Aquest mes</a></li>
-				    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Aquest any</a></li>
-				    <li role="presentation" class="divider"></li>
-				    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Període personalitzat</a></li>
-				  </ul>
-				<big class="pull-right">Total: {{money($user->consums->sum('preu'))}}</big>
+			<div class="row">
+				<div class="col-md-5"><big>Consums generats</big></div>
+				<div class="col-md-3">
+					<div class="dropdown">
+						
+			        	<div class="input-group-btn">
+			                {{ Form::select('con_filter', array(
+			                  '0' => 'Avui', 
+			                  '1' => 'Aquesta setmana',
+			                  '2' => 'Aquest mes',
+			                  '3' => 'Aquest any',
+			                  ), null,['class'=>'form-control btn btn-default dropdown-toggle', 'required' => 'required']); 
+			                }} 
+						</div>
+					</div>
 				</div>
+				<div class="col-md-4">
+					<big class="pull-right">Total: {{money($user->consums->sum('preu'))}}</big>
 				</div>
-
+			</div>
+			<div class="row">
 				@if (count($user->consums)==0)
 					
-					<p>No s'han generat ventes en aquest període</p>
+					<p>No s'han generat consums en aquest període</p>
 
 				@else 
-					
+				<div class="main_table">
 					<table class="table">
 						<thead>
 							<tr>
 								<th>Producte</th>
 								<th>Data</th>
+								<th>Client</th>
 								<th>Import</th>
 							</tr>
 						</thead>
 						<tbody>
-							@foreach ($user->consums as $consums)
+							@foreach ($user->consums as $consum)
 								<tr class='clickableRow' data-url="#">
-									<td>{{ $consums->producte }}</td>
-									<td>{{ $consums->created_at->diffForHumans() }}</td>
-									<td class="text-right">{{ money($consums->preu) }}</td>
+									<td>{{ $consum->producte }}</td>
+									<td>{{ $consum->created_at }}</td>
+									<td>{{ $consum->consumible->name }}</td>
+									<td class="text-right">{{ money($consum->preu) }}</td>
 								</tr>
 							@endforeach
 						</tbody> 
 					</table>
-
+				</div>
 				@endif
-				
-	
+				<div class="text-center">
+					{{--$client->appends(Request::except('page'))->links()--}}
+				</div>
 			</div>
+
 		</div>
 
-	</div>
+		
+		
 
+	</div>
+	<div class="row">
+		{{ Form::submit('Veure dades', ['class'=>'btn btn-primary']) }}
+		{{ Form::close() }}
+	</div>
+	<?php Javascript::put(['com_filter' => Request::get('com_filter'), 'con_filter' => Request::get('con_filter')])?>
 </div>

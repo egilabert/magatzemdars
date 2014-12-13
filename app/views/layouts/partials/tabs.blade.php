@@ -1,3 +1,4 @@
+<div class="active_tab"></div>
 <div role="tabpanel">
 
   <!-- Nav tabs -->

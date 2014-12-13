@@ -129,7 +129,8 @@ return array(
 		'Laracasts\Validation\ValidationServiceProvider',
 		//'Magars\Search\SearchServiceprovider',
 		'Magars\Repos\Clients\ClientsRepoServiceProvider',
-		'Magars\FlashMessages\FlashMessagesServiceProvider'
+		'Magars\FlashMessages\FlashMessagesServiceProvider',
+		'Laracasts\Utilities\UtilitiesServiceProvider'
 	),
 
 	/*
@@ -198,7 +199,8 @@ return array(
 		'View'              => 'Illuminate\Support\Facades\View',
 
 		'Search'            => 'Magars\Facades\Search',
-		'Flash'             => 'Magars\Facades\Flash'
+		'Flash'             => 'Magars\Facades\Flash',
+		'Javascript'		=> 'Laracasts\Utilities\Javascript\Facades\Javascript'
 
 	),
 

@@ -10,7 +10,8 @@
 		"mailchimp/mailchimp": "~2.0",
 		"laracasts/commander": "1.3.10",
 		"laracasts/validation": "1.2.2",
-		"way/generators": "~2.0"
+		"way/generators": "~2.0",
+		"laracasts/utilities": "1.0.1"
 	},
 	"require-dev": {
 		"way/generators": "~2.0"
