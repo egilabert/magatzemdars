@@ -35,6 +35,7 @@ Route::get('/subscribe', '$this->execute(SubscribeUserCommand::class);');
 
 Route::get('/register', 'UsersController@create')->before('guest');
 Route::post('/register', ['as' => 'users.store', 'uses' => 'UsersController@store'])->before('csrf');
+Route::get('/user', ['as' => 'users.index', 'uses' => 'UsersController@index'])->before('auth');
 Route::post('/clients.store', 'UsersController@store')->before('csrf');
 
 
@@ -72,6 +73,9 @@ Route::group(array('before' => 'auth'), function()
 	Route::get('/{profile}', ['as' => 'dashboard', 'uses' => 'ProfilesController@show']);
 	Route::get('/profiles/{profile}/edit', 'ProfilesController@edit');
 	Route::patch('/profiles/{profile}/edit', 'ProfilesController@store');
+
+	#Users
+
 
 });
 

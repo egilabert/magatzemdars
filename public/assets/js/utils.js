@@ -280,6 +280,33 @@ $(document).ready(function(){
         $('#new_observacio').fadeToggle(1000);
     });
 
+    if (magars.tab != null) {
+
+        if (magars.tab == 'comunicació') {
+
+            $('#details a[href="#comunicacions_tab"]').tab('show');
+
+        }
+
+        if (magars.tab == 'consum') {
+
+            $('#details a[href="#consums_tab"]').tab('show');
+            
+        }
+
+        if (magars.tab == 'incidència') {
+
+            $('#details a[href="#incidencies_tab"]').tab('show');
+            
+        }
+
+        if (magars.tab == 'observació') {
+
+            $('#details a[href="#observacions_tab"]').tab('show');
+            
+        }
+    }
+
     $("#cita_button").click(function() {
         $('#new_cita').fadeToggle(1000);
     });
@@ -302,20 +329,13 @@ $(document).ready(function(){
     $("#com_filter").change(
     function(){
          //$(this).closest('form').trigger('submit');
-
          $('#acumulats').trigger('submit');
-         /*   or:
-         $('#acumulats').submit();
-         */
     });
+
     $("#con_filter").change(
     function(){
          //$(this).closest('form').trigger('submit');
-         
          $('#acumulats').trigger('submit');
-         /*   or:
-         $('#acumulats').submit();
-         */
     });
 
 

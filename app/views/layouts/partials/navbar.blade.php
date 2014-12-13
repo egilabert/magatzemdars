@@ -1,6 +1,5 @@
   <nav class="navbar navbar-default
   @if (Auth::guest())
-    container
   @endif
     " role="navigation">
     <div class="container-fluid">
@@ -24,8 +23,8 @@
             <li><a href="/companyia">Companyia</a></li>
             <li><a href="/agenda">Agenda</a></li>
             <li><a href="/entrades">Compra d'entrades</a></li>
+            {{--<li><a href="/botiga">Botiga</a></li>--}}
             <li><a href="/contacte">Contacte</a></li>
-            <li><a href="/botiga">Botiga</a></li>
           </ul>
         @else
         	{{ Form::open([
@@ -64,6 +63,9 @@
   				</div><!-- /input-group -->
         	{{ Form::close() }}
           <ul class="nav navbar-nav navbar-right">
+            @if ((Auth::user()->hasRole('Direcció')) or (Auth::user()->hasRole('Administrador')) or (Auth::user()->hasRole('Propietari')))
+                <li><a href="{{ route('users.index') }}">Treballadors</a></li>
+            @endif
             <li><a href="/clients">Clients</a></li>
             <li><a href="/agenda">Agenda</a></li>
             <li>{{ link_to_profile(Auth::user()->name) }}</li>

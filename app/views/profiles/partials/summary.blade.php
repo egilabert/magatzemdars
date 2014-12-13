@@ -83,14 +83,13 @@
 			                  '0' => 'Avui', 
 			                  '1' => 'Aquesta setmana',
 			                  '2' => 'Aquest mes',
-			                  '3' => 'Aquest any',
-			                  ), null,['class'=>'form-control btn btn-default dropdown-toggle', 'required' => 'required', 'id'=>'con_filter']); 
-			                }} 
+			                  '3' => 'Aquest any'), null, ['class'=>'form-control btn btn-default dropdown-toggle', 'required' => 'required', 'id'=>'con_filter']) 
+			                 }} 
 						</div>
 					</div>
 				</div>
 				<div class="col-md-3">
-					<big class="pull-right">Total: {{money($user->consums->sum('preu'))}}</big>
+					<big class="pull-right"> {{ money($user->consums->sum('preu'))}}</big>
 				</div>
 			</div>
 			<div class="row">
@@ -134,7 +133,6 @@
 
 	</div>
 	<div class="row">
-		{{ Form::submit('Veure dades', ['class'=>'btn btn-primary']) }}
 		{{ Form::close() }}
 	</div>
 	<div class="feed"></div>

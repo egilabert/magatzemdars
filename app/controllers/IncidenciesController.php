@@ -51,7 +51,7 @@ class IncidenciesController extends \BaseController {
 		$client->update();
 		$clientid = $client->id;
 
-		Flash::success($incidencia->tipus.' s\'ha afegit correctament a la base de dades');
+		Flash::success('La incidència de tipus '.$incidencia->tipus.' s\'ha afegit correctament a la base de dades');
 
 		return Redirect::route('clients.show', compact('clientid'));
 	}

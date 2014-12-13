@@ -49,5 +49,4 @@
 @stop
 
 @section('footer')
-	@include('layouts.partials.copyright')
 @stop

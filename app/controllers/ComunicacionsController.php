@@ -64,7 +64,7 @@ class ComunicacionsController extends \BaseController {
 		$client->update();
 		$clientid = $client->id;
 
-		Flash::success($comunicacion->tipus.' s\'ha afegit correctament a la base de dades');
+		Flash::success('La comunicació '.$comunicacion->tipus.' s\'ha afegit correctament a la base de dades');
 
 		return Redirect::route('clients.show', compact('clientid'));
 		//return View::make('clients.show', compact('client'));

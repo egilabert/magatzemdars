@@ -52,6 +52,17 @@
 			</div>
 
 			<div class="form-group">
+				{{Form::label('role','Rol: ')}}
+				{{ Form::select('role', array(
+							'1' => 'Membre', 
+							'2' => 'Direcció',
+							'3' => 'Administrador',
+							'4' => 'Propietari',
+							), null,['class'=>'form-control', 'required' => 'required']); }}
+				<div class="error_basic"> {{ $errors->first('role') }} </div>
+			</div>
+
+			<div class="form-group">
 				{{ Form::submit('Crear usuari', ['class'=>'btn btn-primary']) }}
 			</div>
 

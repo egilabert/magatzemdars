@@ -21,7 +21,7 @@ class UsersController extends \BaseController {
 	 */
 	public function index()
 	{
-		$users = User::all();
+		$users = User::with('profile')->with('roles')->get();
 
 		return View::make('users.index', ['users' => $users]);
 	}
@@ -50,6 +50,8 @@ class UsersController extends \BaseController {
 
 		$data = Input::only('username', 'name', 'email', 'password', 'password_confirmation');
 
+		$role = Input::only('role');
+
 		$this->registrationForm->validate($data);
 
 		$user = User::create($data);
@@ -60,7 +62,7 @@ class UsersController extends \BaseController {
 
 		$user->profile()->save($profile);
 
-		$user->roles()->attach(1);
+		$user->roles()->attach($role);
 
 		Auth::login($user);
 

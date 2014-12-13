@@ -438,6 +438,7 @@ list-style-type: none;
 .service-item {
   text-align: center;
   margin-top: 40px;
+  display:inline-block;
 }
 
 .service-item h4 {
@@ -536,8 +537,67 @@ li img {
 
 .main1 {
 	height: 600px;
+  margin-top: 1px;
 	/*border: 5px solid blue;*/
 	padding: 1px;
+  background-image: url("/assets/img/proves3.jpg");
+  background-size: 104%;
+    background-position: center;
+}
+
+.main2 {
+  margin: 0;
+  height: 400px;
+  overflow: hidden;
+  /*border: 5px solid green;*/
+}
+
+
+
+.promo_3 {
+  height: 200px;
+  /*border: 5px solid blue;
+  padding: 1px;
+  margin: 0px;
+  background-image: url("/assets/img/proves1.jpg");
+  background-size: 104%;
+  background-position: center;
+  margin: 0;
+  padding: 0;*/
+}
+
+.promo_4 {
+  height: 200px;
+  /*border: 5px solid blue;
+  padding: 1px;
+  margin: 0px;
+  background-image: url("/assets/img/proves2.jpg");
+  background-size: 100%;
+    background-position: center;
+  margin: 0;
+  padding: 0;*/
+}
+
+.row_blank {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.promo_bottom {
+  width: 100%;
+  height: 150px;
+}
+
+.promo_5 {
+  height: 200px;
+  /*border: 5px solid blue;
+  padding: 1px;
+  margin: 0px;
+  background-image: url("/assets/img/proves4.jpg");
+  background-size: 104%;
+    background-position: center;
+  margin: 0;
+  padding: 0;*/
 }
 
 .carousel-inner {
@@ -557,22 +617,8 @@ li img {
 }
 
 .mainside {
-	height: 600px;
-	/*border: 1px solid green;*/
-	padding: 1px;
-}
-
-.main2 {
-	margin: 0;
-	height: 400px;
-	overflow: hidden;
-	/*border: 5px solid green;*/
-}
-
-.main2 img{
-	height: 100%;
-    min-width: 100%;
-    max-width: none;
+  margin-top: 1px;
+  padding-left: 1px;
 }
 
 .main3 {

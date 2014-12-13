@@ -18,6 +18,7 @@
 			{{ $client->name }} | 
 			<small>{{$client->location }}</small>
 			<smallest>{{$client->type->tipus}}</smallest>
+			<div class="pull-right">{{ number_format( $client->consums->sum('preu'), 2, ",", "." ) }}€</div>
 		</h1> 
 
 		<hr>
@@ -93,6 +94,17 @@
 			
 	</div>
 
+
+
+	@if (Session::has('flash_notification.message'))
+		<?php
+
+			$myvalue = Session::get('flash_notification.message');
+			$arr = explode(' ',trim($myvalue));
+			Javascript::put(['tab' => $arr[1]]);
+		?>
+	@endif
+
 @stop
 
 @section('scripts')
@@ -105,5 +117,4 @@
 @stop
 
 @section('footer')
-	{{-- @include('layouts.partials.copyright') --}}
 @stop
