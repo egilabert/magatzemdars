@@ -12,8 +12,7 @@
 		"laracasts/utilities": "1.0.1"
 	},
 	"require-dev": {
-		"way/generators": "~2.0",
-		"fzaninotto/faker": "dev-master",
+		
 	},
 	"autoload": {
 		"classmap": [
