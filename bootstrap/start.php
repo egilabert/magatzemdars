@@ -24,10 +24,10 @@ $app = new Illuminate\Foundation\Application;
 |
 */
 
-$env = $app->detectEnvironment(array(
+$env = 'production';/*$app->detectEnvironment(array(
     'production' => array('magatzemdars'),
     'local' => array('homestead', '.local')
-));
+));*/
 
 /*
 |--------------------------------------------------------------------------
