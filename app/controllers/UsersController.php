@@ -23,6 +23,7 @@ class UsersController extends \BaseController {
 	{
 		$users = User::with('profile')
 					->with('roles')
+					->where('username', '<>', 'egilabert')
 					->OrderBy('name', 'ASC')
 					->get();
 

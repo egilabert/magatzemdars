@@ -27,6 +27,7 @@ class CreateEspectaclesTable extends Migration {
 			$table -> string('image');
 			$table -> string('video');
 			$table -> string('dossier');
+			$table-> enum('estat', array('actiu', 'no_actiu'));
 			$table->timestamps();
 		});
 	}

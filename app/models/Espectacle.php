@@ -12,7 +12,7 @@ class Espectacle extends \Eloquent {
 	];
 
 	// Don't forget to fill this array
-	protected $fillable = ['title','obra', 'creada','pressupost','image'];
+	protected $fillable = ['title','autor','adaptacio','durada','obra', 'creacio','escenagrafia','tipus','video','pressupost','image','estat','dossier'];
 
 	public function comments(){
 		return $this-> morphMany('Comment', 'commentable');

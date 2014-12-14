@@ -11,7 +11,7 @@ class IncidenciesTableSeeder extends Seeder {
 		$faker = Faker::create('es_ES');
 		$startDate = Carbon::now();
 
-		foreach(range(1, 1000) as $index)
+		/*foreach(range(1, 1000) as $index)
 		{
 			Incidencie::create([
 
@@ -22,7 +22,7 @@ class IncidenciesTableSeeder extends Seeder {
 				'incidible_type' => 'Client'
 
 			]);
-		}
+		}*/
 	}
 
 }

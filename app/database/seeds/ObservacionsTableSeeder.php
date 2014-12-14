@@ -11,7 +11,7 @@ class ObservacionsTableSeeder extends Seeder {
 		$faker = Faker::create('es_ES');
 		$startDate = Carbon::now();
 
-		foreach(range(1, 1000) as $index)
+		/*foreach(range(1, 1000) as $index)
 		{
 			Observacion::create([
 
@@ -21,7 +21,7 @@ class ObservacionsTableSeeder extends Seeder {
 				'observable_type' => 'Client'
 
 			]);
-		}
+		}*/
 	}
 
 }

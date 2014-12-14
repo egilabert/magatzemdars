@@ -9,7 +9,7 @@ class CommentsTableSeeder extends Seeder {
 	{
 		$faker = Faker::create();
 
-		foreach(range(1, 40) as $index)
+		/*foreach(range(1, 40) as $index)
 		{
 			Comment::create([
 
@@ -18,7 +18,7 @@ class CommentsTableSeeder extends Seeder {
 				'commentable_id' => $faker->numberBetween( 1, 11 ),
 				'commentable_type' => 'Espectacle'
 			]);
-		}
+		}*/
 	}
 
 }

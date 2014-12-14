@@ -11,7 +11,7 @@ class ConsumsTableSeeder extends Seeder {
 		$faker = Faker::create('es_ES');
 		$startDate = Carbon::now();
 
-		foreach(range(1, 1000) as $index)
+		/*foreach(range(1, 1000) as $index)
 		{
 			Consum::create([
 
@@ -23,7 +23,7 @@ class ConsumsTableSeeder extends Seeder {
 				'consumible_type' => 'Client'
 
 			]);
-		}
+		}*/
 	}
 
 }

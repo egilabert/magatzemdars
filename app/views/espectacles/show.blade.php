@@ -36,7 +36,7 @@
         	        <div class="col-md-6 col-sm-6">
         		        <div class="service-item">
         		            <div class="icon">
-        		                <a href="#"><i class="fa fa-info"></i></a>
+        		                <a href="mailto:oriolbores@magatzemdars.com"><i class="fa fa-info"></i></a>
         		            </div>
         		            <a href="#"><h4>Contacta'ns</h4></a>
         		            <p>Per informació i reserves dels nostres espectacles no dubtis en posarte en contacte amb nosaltres.</p>

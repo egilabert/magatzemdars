@@ -9,7 +9,7 @@ class ProfilesTableSeeder extends Seeder {
 	{
 		$faker = Faker::create();
 
-		foreach(range(1, 100) as $index)
+		/*foreach(range(1, 100) as $index)
 		{
 			Profile::create([
 
@@ -21,7 +21,7 @@ class ProfilesTableSeeder extends Seeder {
 				'link1' => 'https://www.facebook.com/'
 
 			]);
-		}
+		}*/
 	}
 
 }

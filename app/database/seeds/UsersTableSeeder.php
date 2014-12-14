@@ -9,12 +9,12 @@ class UsersTableSeeder extends Seeder {
 	{
 		$faker = Faker::create();
 
-		User::create([
+		/*User::create([
 
 				'username'	=> 'magars',
 				'name'	=> 'Magatzem d\'ars',
 				'email'	=> 'info@magatzemdars.com',
-				'password'	=> 'secret',
+				'password'	=> 'Heinrich84',
 				'remember_token' => NULL
 
 			]);
@@ -31,7 +31,7 @@ class UsersTableSeeder extends Seeder {
 
 			]);
 
-		}
+		}*/
 
 	}
 

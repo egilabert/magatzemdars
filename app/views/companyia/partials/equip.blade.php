@@ -124,6 +124,13 @@
         <a href=""><div>Laia Nosàs</div></a>
       </div>
 
+      <div class="col-md-3 text-center equip">
+        <div class="border2">
+          <a href="#"><div class="circular2 equip13"></div></a>
+        </div>
+        <a href=""><div>Anna Marín</div></a>
+      </div>
+
       
 
     </div>

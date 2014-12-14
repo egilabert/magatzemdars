@@ -28,7 +28,9 @@
 			</div>
 		@endforeach
 	</div>
-	@include('layouts.partials.informat')
+	<div class="text-center">
+		@include('layouts.partials.informat')
+	</div>
 </div>
 @stop
 

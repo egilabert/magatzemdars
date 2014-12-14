@@ -843,6 +843,12 @@ img.grayscale.disabled {
     background-size: 100%; 
   }
 
+  .equip13 {
+    background: url("/assets/img/companyia/IMG_3622.jpg") no-repeat;
+    background-position: center;
+    background-size: 100%; 
+  }
+
   .equip1:hover {
     background: url("/assets/img/companyia/IMG_3438.jpg") no-repeat;
     background-position: center;
@@ -911,6 +917,12 @@ img.grayscale.disabled {
 
   .equip12:hover {
     background: url("/assets/img/companyia/IMG_3590.jpg") no-repeat;
+    background-position: center; 
+    background-size: 100%;
+  }
+
+  .equip13:hover {
+    background: url("/assets/img/companyia/IMG_3624.jpg") no-repeat;
     background-position: center; 
     background-size: 100%;
   }

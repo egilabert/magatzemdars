@@ -11,7 +11,7 @@ class ClientsTableSeeder extends Seeder {
 		$faker = Faker::create('es_ES');
 		$startDate = Carbon::now();
 
-		foreach(range(1, 100) as $index)
+		/*foreach(range(1, 100) as $index)
 		{
 			Client::create([
 
@@ -34,7 +34,7 @@ class ClientsTableSeeder extends Seeder {
 				'last_contract_at'	=> $startDate->subMonths( $faker->numberBetween( 0, 5 ))
 
 			]);
-		}
+		}*/
 	}
 
 }
