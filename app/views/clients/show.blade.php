@@ -101,7 +101,7 @@
 
 			$myvalue = Session::get('flash_notification.message');
 			$arr = explode(' ',trim($myvalue));
-			Javascript::put(['tab' => $arr[1]]);
+			//Javascript::put(['tab' => $arr[1]]);
 		?>
 	@endif
 
