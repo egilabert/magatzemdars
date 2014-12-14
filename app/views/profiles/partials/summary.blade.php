@@ -1,3 +1,5 @@
+  <?php use Laracasts\Utilities\JavaScript\Facades\JavaScript; ?> 
+
 <div class="container">
 
 	<div class="row">

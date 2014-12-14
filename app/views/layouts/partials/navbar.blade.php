@@ -1,3 +1,4 @@
+  <?php use Laracasts\Utilities\JavaScript\Facades\JavaScript; ?> 
   <div class="icon_magatzemdars">
     <a href="/"><img src="/assets/img/logos/icon_magatzemdars.jpg" alt="Magatzem d'ars"></a>
   </div>
