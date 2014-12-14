@@ -200,7 +200,6 @@ return array(
 
 		'Search'            => 'Magars\Facades\Search',
 		'Flash'             => 'Magars\Facades\Flash',
-		'Javascript'		=> 'Laracasts\Utilities\Javascript\Facades\Javascript'
 
 	),
 
