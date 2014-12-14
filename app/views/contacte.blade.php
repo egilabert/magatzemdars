@@ -38,7 +38,6 @@
 @stop
 
 @section('footer')
-	@include('layouts.partials.copyright')
 	<script src="https://maps.googleapis.com/maps/api/js"></script>
 	<script>
 	  function initialize() {

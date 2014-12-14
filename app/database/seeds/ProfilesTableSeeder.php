@@ -9,16 +9,13 @@ class ProfilesTableSeeder extends Seeder {
 	{
 		$faker = Faker::create();
 
-		$i = 0;
-
 		foreach(range(1, 100) as $index)
 		{
-			$i++;
 			Profile::create([
 
-				'user_id' => $i,
+				'user_id' => $index,
 				'location' => $faker->city(),
-				'bio' => $faker->sentence($nbWords = 20),
+				'bio' => $faker->sentence($nbWords = 50),
 				'rol' => 'webmaster',
 				'foto' => 'utils/profile.gif',
 				'link1' => 'https://www.facebook.com/'

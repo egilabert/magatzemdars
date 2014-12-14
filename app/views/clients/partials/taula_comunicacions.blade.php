@@ -20,24 +20,14 @@
 		</div>
 		<div class="info_subcamp">{{ $comunicacio->tipus }}</div>
 	</td>
-
-	@if ($comunicacio->hora_progamada != '-0001-11-30 00:00:00')
-
-		<td>
-			<div class="edit_form_subcamp not_displayed">
-				{{Form::input('datetime-local', 'hora_progamada', Auth::user()->time, ['class'=>'form-control'])}}
-			</div>
-			<div class="info_subcamp">{{ $comunicacio->hora_progamada }}</div>
-		</td>
-
-	@else
-		<td>
-			<div class="edit_form_subcamp not_displayed">
-				{{Form::input('datetime-local', 'hora_progamada', Auth::user()->time, ['class'=>'form-control'])}}
-			</div>
-		</td>
-	@endif
-
+	<td>
+		<div class="edit_form_subcamp not_displayed">
+			{{Form::input('datetime-local', 'hora_progamada', Auth::user()->time, ['class'=>'form-control'])}}
+		</div>
+		@if ($comunicacio->hora_progamada != $comunicacio->created_at)
+		<div class="info_subcamp">{{ $comunicacio->hora_progamada }}</div>
+		@endif
+	</td>
 	<td>
 		<div class="edit_form_subcamp not_displayed">
 			{{ Form::text('observacions', null, ['class'=>'form-control', 'placeholder' => 'Observacions...', 'required' => 'required']); }} 

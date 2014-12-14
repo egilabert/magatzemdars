@@ -1,6 +1,6 @@
 <div class="barra_clients">
 	<div class="container">
-		<div class="row">
+		<div class="row clients_top">
 			<a href="#" type="button" class="btn btn-success btn-sm" id="comunicacions">+ Comunicació</a>
 			<a href="#" type="button" class="btn btn-success btn-sm" id="consums">+ Consum</a>
 			<a href="#" type="button" class="btn btn-success btn-sm" id="incidencies">+ Incidència</a>

@@ -14,7 +14,7 @@ class UsersTableSeeder extends Seeder {
 				'username'	=> 'magars',
 				'name'	=> 'Magatzem d\'ars',
 				'email'	=> 'info@magatzemdars.com',
-				'password'	=> Hash::make('secret'),
+				'password'	=> 'secret',
 				'remember_token' => NULL
 
 			]);
@@ -26,7 +26,7 @@ class UsersTableSeeder extends Seeder {
 				'username'	=> $faker->username(),
 				'name'	=> $faker->name(),
 				'email'	=> $faker->email(),
-				'password'	=> Hash::make($faker->word()),
+				'password'	=> 'secret',
 				'remember_token' => NULL
 
 			]);

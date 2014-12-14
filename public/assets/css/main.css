@@ -540,8 +540,8 @@ li img {
   margin-top: 1px;
 	/*border: 5px solid blue;*/
 	padding: 1px;
-  background-image: url("/assets/img/proves3.jpg");
-  background-size: 104%;
+  background-image: url("/assets/img/companyia/IMG_3641.jpg");
+  background-size: 117%;
     background-position: center;
 }
 
@@ -556,27 +556,40 @@ li img {
 
 .promo_3 {
   height: 200px;
-  /*border: 5px solid blue;
+  /*border: 5px solid blue;*/
   padding: 1px;
   margin: 0px;
-  background-image: url("/assets/img/proves1.jpg");
-  background-size: 104%;
+  background-image: url("/assets/img/companyia/IMG_3721.jpg");
+  background-size: 110%;
   background-position: center;
   margin: 0;
-  padding: 0;*/
+  padding: 0;
 }
 
 .promo_4 {
   height: 200px;
-  /*border: 5px solid blue;
+  /*border: 5px solid blue;*/
   padding: 1px;
   margin: 0px;
-  background-image: url("/assets/img/proves2.jpg");
-  background-size: 100%;
+  background-image: url("/assets/img/companyia/IMG_3681.jpg");
+  background-size: 110%;
+    background-position: center;
+  margin: 0;
+  padding: 0;
+}
+
+.promo_5 {
+  height: 200px;
+  /*border: 5px solid blue;*/
+  padding: 1px;
+  margin: 0px;
+  background-image: url("/assets/img/companyia/IMG_3722.jpg");
+  background-size: 110%;
     background-position: center;
   margin: 0;
   padding: 0;*/
 }
+
 
 .row_blank {
   margin-left: 0px;
@@ -585,19 +598,16 @@ li img {
 
 .promo_bottom {
   width: 100%;
-  height: 150px;
 }
 
-.promo_5 {
-  height: 200px;
-  /*border: 5px solid blue;
-  padding: 1px;
-  margin: 0px;
-  background-image: url("/assets/img/proves4.jpg");
-  background-size: 104%;
-    background-position: center;
-  margin: 0;
-  padding: 0;*/
+.promo_bottom img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  /*background-image: url("/assets/img/logos/magatzemdars.jpg");
+  background-size: 110%;
+    background-position: center;*/
 }
 
 .carousel-inner {
@@ -605,14 +615,12 @@ li img {
 }
 
 .carousel-inner .item {
-    overflow: hidden;
     max-width: 100%;
     max-height: 100%;
 }
 
 .carousel-inner .item img {
-    height: 100%;
-    min-width: 100%;
+    width: 100%;
     max-width: none;
 }
 
@@ -695,76 +703,217 @@ img.grayscale.disabled {
 
 .circular {
   color: black;
-  width: 120px;
-  height: 120px;
-  border-radius: 60px;
-  -webkit-border-radius: 60px;
-  -moz-border-radius: 60px;
+  width: 290px;
+  height: 435px;
   }
 
-  .albert {
-    background: url("/assets/img/proves2.jpg") no-repeat;
-    background-position: center;  
-  }
-
-  .oriol {
-    background: url("/assets/img/proves2.jpg") no-repeat;
-    background-position: center; 
-  }
-
-  .aitor {
-    background: url("/assets/img/proves2.jpg") no-repeat;
-    background-position: center; 
-  }
-
-  .dolores {
-    background: url("/assets/img/proves2.jpg") no-repeat;
-    background-position: center; 
-  }
-
-  .quim {
-    background: url("/assets/img/proves2.jpg") no-repeat;
-    background-position: center; 
-  }
-
-  .albert:hover {
-    background: url("/assets/img/proves1.jpg") no-repeat;
-    background-position: center;
-  }
-
-  .oriol:hover {
-    background: url("/assets/img/proves7.jpg") no-repeat;
-    background-position: center; 
-  }
-
-  .aitor:hover {
-    background: url("/assets/img/proves8.jpg") no-repeat;
-    background-position: center; 
-  }
-
-  .dolores:hover {
-    background: url("/assets/img/proves11.jpg") no-repeat;
-    background-position: center; 
-  }
-
-  .quim:hover {
-    background: url("/assets/img/proves10.jpg") no-repeat;
-    background-position: center; 
+.circular2 {
+  color: black;
+  width: 233px;
+  height: 347px;
   }
 
 .border {
-  width: 160px;
-  height: 160px;
+  width: 290px;
+  height: 435px;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 80px;
-  -webkit-border-radius: 80px;
-  -moz-border-radius: 80px;  
-  border: 10px solid white;
-  padding: 10px;
+  /*border: 1px solid black;
+  padding: 10px;*/
   color: black;
 
 }
+
+.border2 {
+  width: 233px;
+  height: 347px;
+  margin-left: auto;
+  margin-right: auto;
+  /*border: 1px solid black;
+  padding: 10px;*/
+  color: black;
+
+}
+
+  .albert {
+    background: url("/assets/img/companyia/IMG_3568.jpg") no-repeat;
+    background-position: center;  
+    background-size: 100%;
+  }
+
+  .oriol {
+    background: url("/assets/img/companyia/IMG_3629.jpg") no-repeat;
+    background-position: center; 
+    background-size: 100%;
+  }
+
+  .mar {
+    background: url("/assets/img/companyia/IMG_3578.jpg") no-repeat;
+    background-position: center;
+    background-size: 100%; 
+  }
+
+  .albert:hover {
+    background: url("/assets/img/companyia/IMG_3570.jpg") no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+
+  .oriol:hover {
+    background: url("/assets/img/companyia/IMG_3634.jpg") no-repeat;
+    background-position: center; 
+    background-size: 100%;
+  }
+
+  .mar:hover {
+    background: url("/assets/img/companyia/IMG_3582.jpg") no-repeat;
+    background-position: center; 
+    background-size: 100%;
+  }
+
+  .equip1 {
+    background: url("/assets/img/companyia/IMG_3431.jpg") no-repeat;
+    background-position: center;  
+    background-size: 100%;
+  }
+
+  .equip2 {
+    background: url("/assets/img/companyia/IMG_3451.jpg") no-repeat;
+    background-position: center; 
+    background-size: 100%;
+  }
+
+  .equip3 {
+    background: url("/assets/img/companyia/IMG_3458.jpg") no-repeat;
+    background-position: center;
+    background-size: 100%; 
+  }
+
+  .equip4 {
+    background: url("/assets/img/companyia/IMG_3473.jpg") no-repeat;
+    background-position: center;
+    background-size: 100%; 
+  }
+
+  .equip5 {
+    background: url("/assets/img/companyia/IMG_3483.jpg") no-repeat;
+    background-position: center;  
+    background-size: 100%;
+  }
+
+  .equip6 {
+    background: url("/assets/img/companyia/IMG_3491.jpg") no-repeat;
+    background-position: center; 
+    background-size: 100%;
+  }
+
+  .equip7 {
+    background: url("/assets/img/companyia/IMG_3511.jpg") no-repeat;
+    background-position: center;
+    background-size: 100%; 
+  }
+
+  .equip8 {
+    background: url("/assets/img/companyia/IMG_3524.jpg") no-repeat;
+    background-position: center;
+    background-size: 100%; 
+  }
+
+  .equip9 {
+    background: url("/assets/img/companyia/IMG_3535.jpg") no-repeat;
+    background-position: center;  
+    background-size: 100%;
+  }
+
+  .equip10 {
+    background: url("/assets/img/companyia/IMG_3544.jpg") no-repeat;
+    background-position: center; 
+    background-size: 100%;
+  }
+
+  .equip11 {
+    background: url("/assets/img/companyia/IMG_3552.jpg") no-repeat;
+    background-position: center;
+    background-size: 100%; 
+  }
+
+  .equip12 {
+    background: url("/assets/img/companyia/IMG_3585.jpg") no-repeat;
+    background-position: center;
+    background-size: 100%; 
+  }
+
+  .equip1:hover {
+    background: url("/assets/img/companyia/IMG_3438.jpg") no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+
+  .equip2:hover {
+    background: url("/assets/img/companyia/IMG_3454.jpg") no-repeat;
+    background-position: center; 
+    background-size: 100%;
+  }
+
+  .equip3:hover {
+    background: url("/assets/img/companyia/IMG_3462.jpg") no-repeat;
+    background-position: center; 
+    background-size: 100%;
+  }
+
+  .equip4:hover {
+    background: url("/assets/img/companyia/IMG_3477.jpg") no-repeat;
+    background-position: center; 
+    background-size: 100%;
+  }
+
+  .equip5:hover {
+    background: url("/assets/img/companyia/IMG_3488.jpg") no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+
+  .equip6:hover {
+    background: url("/assets/img/companyia/IMG_3504.jpg") no-repeat;
+    background-position: center; 
+    background-size: 100%;
+  }
+
+  .equip7:hover {
+    background: url("/assets/img/companyia/IMG_3514.jpg") no-repeat;
+    background-position: center; 
+    background-size: 100%;
+  }
+
+  .equip8:hover {
+    background: url("/assets/img/companyia/IMG_3528.jpg") no-repeat;
+    background-position: center; 
+    background-size: 100%;
+  }
+
+  .equip9:hover {
+    background: url("/assets/img/companyia/IMG_3537.jpg") no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+
+  .equip10:hover {
+    background: url("/assets/img/companyia/IMG_3550.jpg") no-repeat;
+    background-position: center; 
+    background-size: 100%;
+  }
+
+  .equip11:hover {
+    background: url("/assets/img/companyia/IMG_3558.jpg") no-repeat;
+    background-position: center; 
+    background-size: 100%;
+  }
+
+  .equip12:hover {
+    background: url("/assets/img/companyia/IMG_3590.jpg") no-repeat;
+    background-position: center; 
+    background-size: 100%;
+  }
 
 .cv {
   font-size: 15px;
@@ -850,7 +999,7 @@ smallest {
 }
 
 .landing {
-  background: url("/assets/img/backgrounds/landing.jpeg") no-repeat center center fixed; 
+  background: url("/assets/img/companyia/IMG_3722.jpg") no-repeat center center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -871,7 +1020,7 @@ smallest {
 .photo_agenda {
   height: 200px;
   overflow: hidden;
-  background: url("/assets/img/backgrounds/landing.jpeg") no-repeat center center fixed; 
+  background: url("/assets/img/companyia/IMG_3638.jpg") no-repeat center center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -895,6 +1044,21 @@ smallest {
   /*display: none;*/
 }
 
+#bs-example-navbar-collapse-1 {
+  margin-left: 50px;
+}
+
 .navbar-nav li {
   font-size: 12px;
+}
+
+.clients_top {
+  margin-left: 30px;
+}
+
+.icon_magatzemdars img {
+  position: absolute;
+  z-index: 999999999999;
+  height: 100px;
+
 }

@@ -89,7 +89,7 @@
 					</div>
 				</div>
 				<div class="col-md-3">
-					<big class="pull-right"> {{ money($user->consums->sum('preu'))}}</big>
+					<big class="pull-right"> {{ number_format( $user->consums->sum('preu'), 2, ",", "." ) }}€</big>
 				</div>
 			</div>
 			<div class="row">
@@ -114,7 +114,8 @@
 									<td>{{ $consum->producte }}</td>
 									<td>{{ $consum->created_at }}</td>
 									<td>{{ $consum->consumible->name }}</td>
-									<td class="text-right">{{ money($consum->preu) }}</td>
+									<td class="text-right">{{ number_format( $consum->preu, 2, ",", "." ) }}€
+									</td>
 								</tr>
 							@endforeach
 						</tbody> 

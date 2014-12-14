@@ -280,51 +280,55 @@ $(document).ready(function(){
         $('#new_observacio').fadeToggle(1000);
     });
 
-    if (magars.tab != null) {
+    if(typeof magars !== 'undefined'){
 
-        if (magars.tab == 'comunicació') {
+        if (magars.tab != null) {
 
-            $('#details a[href="#comunicacions_tab"]').tab('show');
+            if (magars.tab == 'comunicació') {
 
+                $('#details a[href="#comunicacions_tab"]').tab('show');
+
+            }
+
+            if (magars.tab == 'consum') {
+
+                $('#details a[href="#consums_tab"]').tab('show');
+                
+            }
+
+            if (magars.tab == 'incidència') {
+
+                $('#details a[href="#incidencies_tab"]').tab('show');
+                
+            }
+
+            if (magars.tab == 'observació') {
+
+                $('#details a[href="#observacions_tab"]').tab('show');
+                
+            }
         }
 
-        if (magars.tab == 'consum') {
+        if (magars.com_filter != null) {
 
-            $('#details a[href="#consums_tab"]').tab('show');
-            
+            $("#com_filter").val(magars.com_filter);
+        }
+        
+        if (magars.con_filter != null) {
+
+            $("#con_filter").val(magars.con_filter);
         }
 
-        if (magars.tab == 'incidència') {
+        if (magars.client_filter != null) {
 
-            $('#details a[href="#incidencies_tab"]').tab('show');
-            
+            $("#client_filter").val(magars.client_filter);
         }
 
-        if (magars.tab == 'observació') {
-
-            $('#details a[href="#observacions_tab"]').tab('show');
-            
-        }
     }
 
     $("#cita_button").click(function() {
         $('#new_cita').fadeToggle(1000);
     });
-
-    if (magars.com_filter != null) {
-
-        $("#com_filter").val(magars.com_filter);
-    }
-    
-    if (magars.con_filter != null) {
-
-        $("#con_filter").val(magars.con_filter);
-    }
-
-    if (magars.client_filter != null) {
-
-        $("#client_filter").val(magars.client_filter);
-    }
 
     $("#com_filter").change(
     function(){

@@ -43,15 +43,7 @@ class ComunicacionsController extends \BaseController {
 
 		$comunicacion = new Comunicacion;
 		$comunicacion->tipus = $data['tipus'];
-		if (Carbon::parse($data['hora_progamada']) == Carbon::now()) {
-
-			//$comunicacion->hora_progamada = null;
-
-		} else {
-
-			$comunicacion->hora_progamada = Carbon::parse($data['hora_progamada']);
-		
-		}
+		$comunicacion->hora_progamada = Carbon::parse($data['hora_progamada']);
 		$comunicacion->observacions = $data['observacions'];
 		$comunicacion->comunicable_id = $data['id'];
 		$comunicacion->comunicable_type = 'Client'; //hardcoded this might be changed and implemented better

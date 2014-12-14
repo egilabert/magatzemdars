@@ -21,7 +21,12 @@ class UsersController extends \BaseController {
 	 */
 	public function index()
 	{
-		$users = User::with('profile')->with('roles')->get();
+		$users = User::with('profile')
+					->with('roles')
+					->OrderBy('name', 'ASC')
+					->get();
+
+		//return $users;
 
 		return View::make('users.index', ['users' => $users]);
 	}

@@ -25,7 +25,7 @@
 			{{ Form::text('preu', null, ['class'=>'form-control', 'placeholder' => 'Preu...', 'required' => 'required']); }} 
 						{{ errors_for('preu', $errors)}}
 		</div>
-		<div class="info_subcamp">{{ $consum->preu }}</div>
+		<div class="info_subcamp">{{ number_format( $consum->preu, 2, ",", "." ) }}€</div>
 	</td>
 	<td>
 		<div class="edit_form_subcamp not_displayed">

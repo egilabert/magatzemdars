@@ -16,7 +16,7 @@ class ComunicacionsTableSeeder extends Seeder {
 			Comunicacion::create([
 
 				'tipus' => 'trucada',
-				'hora_progamada' => $startDate->addDays($faker->numberBetween( 0, 14 )),
+				'hora_progamada' => $startDate,
 				'observacions' => $faker->paragraph($nb = 5),
 				'user_id' => $faker->numberBetween( 1, 100 ),
 				'comunicable_id' => $faker->numberBetween( 1, 100 ),

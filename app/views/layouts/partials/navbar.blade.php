@@ -1,3 +1,6 @@
+  <div class="icon_magatzemdars">
+    <a href="/"><img src="/assets/img/logos/icon_magatzemdars.jpg" alt="Magatzem d'ars"></a>
+  </div>
   <nav class="navbar navbar-default
   @if (Auth::guest())
   @endif
@@ -7,7 +10,7 @@
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <a class="navbar-brand" href="/">
-          Magatzem d'Ars
+          
         </a>
       </div>
 
@@ -22,7 +25,7 @@
             <li><a href="/sales">Lloguer de sales</a></li>
             <li><a href="/companyia">Companyia</a></li>
             <li><a href="/agenda">Agenda</a></li>
-            <li><a href="/entrades">Compra d'entrades</a></li>
+            {{--<li><a href="/entrades">Compra d'entrades</a></li>--}}
             {{--<li><a href="/botiga">Botiga</a></li>--}}
             <li><a href="/contacte">Contacte</a></li>
           </ul>

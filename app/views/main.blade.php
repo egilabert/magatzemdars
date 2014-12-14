@@ -14,7 +14,7 @@
 	<div class="portal">
 		<div class="row">
 
-			<div class="col-md-7 main1"></div>
+			<a href=""><div class="col-md-7 main1"></div></a>
 
 			<div class="col-md-5 mainside">
 
@@ -24,16 +24,16 @@
 
 				<div class="row row_blank">
 
-					<div class="col-md-4 promo_3">Promo 3</div>
-					<div class="col-md-4 promo_4">Promo 4</div>
-					<div class="col-md-4 promo_5">Promo 5</div>
+					<a href=""><div class="col-md-4 promo_3"></div></a>
+					<a href=""><div class="col-md-4 promo_4"></div></a>
+					<a href=""><div class="col-md-4 promo_5"></div></a>
 
 				</div>
 
 			</div>
 		</div>
 		<div class="row promo_bottom">
-			Promo baix
+			<img src="/assets/img/logos/magatzemdars.jpg" alt="Magatzem d'ars">
 		</div>
 
 		<div class="row text-center">
