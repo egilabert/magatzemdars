@@ -237,7 +237,7 @@ class CitesTableSeeder extends Seeder {
 
 
 
-		foreach(range(1, 1000) as $index)
+		/*foreach(range(1, 1000) as $index)
 		{
 			Cite::create([
 
@@ -246,7 +246,7 @@ class CitesTableSeeder extends Seeder {
 				'user_id' => $faker->numberBetween( 2, 101 )
 
 			]);
-		}
+		}*/
 	}
 
 }

@@ -22,7 +22,7 @@ class CitesController extends \BaseController {
 			$user = User::find(1);
 
 			$cites = Cite::whereBetween('data_programada', array($begining_month, $end_month ))
-					->where('user_id', '=', $user->id)
+					->where('user_id', '=', '1')
 					->orderBy('data_programada', 'ASC')
 					->get();
 
