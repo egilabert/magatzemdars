@@ -52,7 +52,7 @@
                   '10' => 'Treballadors',
                   ), null,['class'=>'form-control btn btn-default dropdown-toggle', 'required' => 'required', 'id'=>'client_filter']); 
                 }}
-              <?php //Javascript::put(['client_filter' => Request::get('search_key')])?>
+              <?php Javascript::put(['client_filter' => Request::get('search_key')])?>
   			      </div><!-- /btn-group -->
           		<div class="form-group">
           			{{Form::input('search', 'q', null, ['class' => 'form-control','placeholder' => 'Search...'])}}
