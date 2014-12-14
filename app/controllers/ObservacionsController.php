@@ -2,7 +2,6 @@
 
 use Magars\Repos\Clients\ClientsRepoInterface;
 use Magars\Repos\Clients\Client;
-use Laracasts\Utilities\Javascript\Facades\Javascript;
 
 class ObservacionsController extends \BaseController {
 
@@ -54,8 +53,6 @@ class ObservacionsController extends \BaseController {
 
 		Flash::success('La observació s\'ha afegit correctament a la base de dades');
 
-		Javascript::put(['tab' => 'observacions']);
-
 		return Redirect::route('clients.show', compact('clientid'));
 	}
 
@@ -87,8 +84,6 @@ class ObservacionsController extends \BaseController {
 
 		Flash::message('La observació s\'ha editat correctament a la base de dades');
 
-		Javascript::put(['tab' => 'observacions']);
-
 		return Redirect::route('clients.show', compact('clientid'));
 	}
 
@@ -109,8 +104,6 @@ class ObservacionsController extends \BaseController {
 		$observacio->destroy($id);
 
 		Flash::danger('La observació s\'ha eliminat correctament a la base de dades');
-
-		Javascript::put(['tab' => 'observacions']);
 
 		return Redirect::route('clients.show', compact('clientid'));	
 	}
