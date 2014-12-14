@@ -5,5 +5,3 @@
 		
 	</div>
 </div>
-
-<?php Javascript::put(['client_filter' => Request::get('search_key')])?>
