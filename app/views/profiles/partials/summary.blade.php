@@ -137,5 +137,5 @@
 		{{ Form::close() }}
 	</div>
 	<div class="feed"></div>
-	<?php Javascript::put(['com_filter' => Request::get('com_filter'), 'con_filter' => Request::get('con_filter')])?>
+	<?php //Javascript::put(['com_filter' => Request::get('com_filter'), 'con_filter' => Request::get('con_filter')])?>
 </div>
