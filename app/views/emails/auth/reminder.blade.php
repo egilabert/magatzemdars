@@ -4,9 +4,9 @@
 		<meta charset="utf-8">
 	</head>
 	<body>
-		<div class="row">
+		{{--<div class="row">
 			<img src="/assets/img/logos/magatzemdars.jpg" alt="Magatzem d'ars">
-		</div>
+		</div>--}}
 		<div class="row">
 			<h2>Cambi de Password</h2>
 
