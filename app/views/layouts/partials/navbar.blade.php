@@ -2,10 +2,12 @@
   <div class="icon_magatzemdars">
     <a href="/"><img src="/assets/img/logos/icon_magatzemdars.jpg" alt="Magatzem d'ars"></a>
   </div>
+
   <nav class="navbar navbar-default
   @if (Auth::guest())
   @endif
     " role="navigation">
+    
     <div class="container-fluid">
 
       <!-- Brand and toggle get grouped for better mobile display -->
