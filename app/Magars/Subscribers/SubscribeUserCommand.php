@@ -1,6 +1,4 @@
-<?php namespace Magars\Users;
-
-use Hash;
+<?php namespace Magars\Subscribers;
 
 class SubscribeUserCommand {
 
@@ -25,11 +23,6 @@ class SubscribeUserCommand {
 	public function getEmail()
 	{
 		return $this->email;
-	}
-
-	public function getPassword()
-	{
-		return $this->password;
 	}
 
 	public function getNotify()

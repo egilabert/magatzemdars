@@ -1,4 +1,4 @@
-<?php namespace Magars\Users\Exceptions;
+<?php namespace Magars\Subscribers\Exceptions;
 
 use Exception;
 

@@ -1,8 +1,8 @@
-<?php namespace Magars\Users;
+<?php namespace Magars\Subscribers;
 
 Use Laracasts\Commander\CommandHandler;
 Use Laracasts\Commander\Events\DispatchableTrait;
-Use Persone;
+Use Subscriber;
 
 class SubscribeUserCommandHandler implements CommandHandler {
 
@@ -11,10 +11,12 @@ class SubscribeUserCommandHandler implements CommandHandler {
 	public function handle($command)
 	{
 		//Afegir a la base de dades
-		$persone = Persone::subscribe($command->getName(), $command->getEmail(), $command->getNotify());
 
-		$this->dispatchEventsFor($persone);
+		$subscriber = Subscriber::subscribe($command->getName(), $command->getEmail(), $command->getNotify());
 
-		return $persone;
+		$this->dispatchEventsFor($subscriber);
+
+		return $subscriber;
+
 	}
 }

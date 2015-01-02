@@ -1,13 +1,12 @@
-<?php namespace Magars\Users;
+<?php namespace Magars\Subscribers;
 
 use Validator;
-use Magars\Users\Exceptions\ValidationFailedException;
+use Magars\Subscribers\Exceptions\ValidationFailedException;
 
 class SubscribeUserValidator {
 
 	public static $rules = [
-		'email' => 'required|email|unique:users',
-		'name' => 'required',
+		'email' => 'required|email|unique:subscriptors',
 		'notify' => 'required'
 	];
 

@@ -28,8 +28,8 @@ class NouEspectacle implements NouEspectacleInterface {
 			'list_id' 		=> self::MAGARS_SUBSCRIBERS_ID,
 			'subject'		=> 'Recorda les activitats de Magatzem d\'Ars',
 			'from_name'		=> 'Magatzem d\'Ars',
-			'from_email' 	=> 'enricgilabert@magatzemdars.com',
-			'to_name'		=> 'Magars Subscribers'
+			'from_email' 	=> 'oriolbores@magatzemdars.com',
+			'to_name'		=> 'Subscriptors Magatzem d\'Ars'
 		];
 
 		$content = [

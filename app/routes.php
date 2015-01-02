@@ -1,22 +1,11 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the Closure to execute when that URI is requested.
-|
-*/
-
 /*Event::listen('illuminate.query', function($sql){
  	var_dump($sql);
 });*/
 
 
-Event::listen('Magars.*', 'Magars\Users\Listeners\EmailNotifier@whenUserHasSubscribed');
+Event::listen('Magars.*', 'Magars\Subscribers\Listeners\EmailNotifier@whenUserHasSubscribed');
 
 # Static pages 
 
@@ -29,7 +18,9 @@ Route::get('/agenda', ['as' => 'agenda', 'uses' => 'CitesController@index']);
 
 #Newsletters
 
-Route::get('/subscribe', '$this->execute(SubscribeUserCommand::class);');
+Route::get('/subscribe', 'SubscribersController@create');
+Route::post('/subscribe', 'SubscribersController@store');
+
 
 #Registration
 
@@ -57,8 +48,6 @@ Route::resource('observacions', 'ObservacionsController');
 #Remember password
 
 Route: Route::controller('password', 'RemindersController');
-
-
 
 
 Route::group(array('before' => 'auth'), function()

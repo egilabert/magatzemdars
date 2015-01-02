@@ -38,10 +38,10 @@ class NewslettersList implements NewslettersListInterface {
 			return $this->mailchimp->lists->subscribe(
 				$this->lists[$listName],
 				['email' => $email],
-				null, //merge varaibles
+				null, //merge variables
 				'html', //email type
-				false, //require double opt in
-				true //update exisitng subscribers
+				false, //require double opt in (we need a confirmation email?)
+				true //update exisitng subscribers (if it's already subscribed)
 			);
 		} catch (Mailchimp_Error $e) {
             if ($e->getMessage()) {

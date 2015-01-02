@@ -826,7 +826,7 @@ img.grayscale.disabled {
   }
 
   .equip10 {
-    background: url("/assets/img/companyia/IMG_3544.JPG") no-repeat;
+    background: url("/assets/img/companyia/IMG_3550.JPG") no-repeat;
     background-position: center; 
     background-size: 100%;
   }
@@ -904,7 +904,7 @@ img.grayscale.disabled {
   }
 
   .equip10:hover {
-    background: url("/assets/img/companyia/IMG_3550.JPG") no-repeat;
+    background: url("/assets/img/companyia/IMG_3544.JPG") no-repeat;
     background-position: center; 
     background-size: 100%;
   }

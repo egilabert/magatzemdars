@@ -1,7 +1,7 @@
-<?php namespace Magars\Users\Listeners;
+<?php namespace Magars\Subscribers\Listeners;
 
 use Laracasts\Commander\Events\EventListener;
-use Magars\Users\Events\UserHasSubscribed;
+use Magars\Subscribers\Events\UserHasSubscribed;
 use Magars\Newsletters\NewslettersList;
 
 
@@ -21,9 +21,9 @@ class EmailNotifier extends EventListener {
 	{
 
 		//Enviar a la subscripció
-		$email = $event->persone->email;
+		$email = $event->subscriber->email;
 
-		
 		$this->newslettersList->subscribeTo('MagarsSubscribers', $email);
+
 	}
 }
