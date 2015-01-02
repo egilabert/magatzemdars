@@ -14,9 +14,9 @@
 	<div class="portal">
 		<div class="row">
 
-			<a href=""><div class="col-md-7 main1"></div></a>
+			<a href=""><div class="col-md-7 col-xs-12 main1"></div></a>
 
-			<div class="col-md-5 mainside">
+			<div class="col-md-5 col-xs-12 mainside">
 
 					<div class="main2">
 						@include('layouts.partials.carousel')
@@ -24,9 +24,9 @@
 
 				<div class="row row_blank">
 
-					<a href=""><div class="col-md-4 promo_3"></div></a>
-					<a href=""><div class="col-md-4 promo_4"></div></a>
-					<a href=""><div class="col-md-4 promo_5"></div></a>
+					<a href=""><div class="col-md-4 col-xs-4 promo_3"></div></a>
+					<a href=""><div class="col-md-4 col-xs-4 promo_4"></div></a>
+					<a href=""><div class="col-md-4 col-xs-4 promo_5"></div></a>
 
 				</div>
 

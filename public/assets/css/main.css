@@ -541,7 +541,7 @@ li img {
 	/*border: 5px solid blue;*/
 	padding: 1px;
   background-image: url("/assets/img/companyia/IMG_3641.JPG");
-  background-size: 117%;
+  background-size: 118%;
     background-position: center;
 }
 
@@ -1060,10 +1060,6 @@ smallest {
   margin-left: 50px;
 }
 
-.navbar-nav li {
-  font-size: 12px;
-}
-
 .clients_top {
   margin-left: 30px;
 }
@@ -1074,3 +1070,22 @@ smallest {
   height: 100px;
 
 }
+
+.navbar-default {
+  background: none;
+  filter: none;
+  border: none;
+  box-shadow: none;
+
+}
+
+.navbar-nav li {
+  font-size: 14px;
+}
+
+.navbar-nav li a:hover {
+  color: black;
+  font-style: bold;
+  font-weight: 700px;
+}
+
