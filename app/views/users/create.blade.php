@@ -23,7 +23,6 @@
 				{{Form::text('username', null, ['class'=>'form-control', 'required' => 'required'])}}
 				<div class="error_basic"> {{ $errors->first('username') }} </div>
 				{{-- $errors->first('name', '<span class=error>:message</span>') --}}
-
 			</div>
 
 			<div class="form-group">

@@ -39,7 +39,7 @@
 		<div class="row text-center">
 			<div class="col-md-2 col-md-offset-3 service-item">
 		        <div class="icon">
-		            <a href="#"><i class="fa fa-ticket"></i></a>
+		            <a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-ticket"></i></a>
 		        </div>
 		        <a href="#"><h4>Compra entrades</h4></a>
 		    </div>

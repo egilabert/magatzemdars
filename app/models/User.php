@@ -31,42 +31,66 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	 */
 	protected $hidden = array('password', 'remember_token');
 
+	/**
+	 * @return mixed
+     */
 	public function cites()
 	{
 		return $this->hasMany('Cite');
 	}
 
+	/**
+	 * @return mixed
+     */
 	public function comunicacions()
 	{
 		return $this->hasMany('Comunicacion');
 	}
 
+	/**
+	 * @return mixed
+     */
 	public function consums()
 	{
 		return $this->hasMany('Consum');
 	}
 
+	/**
+	 * @return mixed
+     */
 	public function incidencies()
 	{
 		return $this->hasMany('Incidencie');
 	}
 
+	/**
+	 * @return mixed
+     */
 	public function observacions()
 	{
 		return $this->hasMany('Observacion');
 	}
 
+	/**
+	 * @param $password
+     */
 	public function setPasswordAttribute($password)
 	{
 
 		$this->attributes['password'] = Hash::make($password);
 	}
 
+	/**
+	 * @return mixed
+     */
 	public function profile()
 	{
 		return $this->hasOne('Profile');
 	}
 
+	/**
+	 * @return bool
+     */
 	public function isCurrent()
 	{
 
@@ -76,11 +100,18 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	
 	}
 
+	/**
+	 * @return mixed
+     */
 	public function roles()
 	{
 		return $this->belongsToMany('Role')->withTimestamps();
 	}
 
+	/**
+	 * @param $name
+	 * @return bool
+     */
 	public function hasRole($name)
 	{
 		foreach ($this->roles as $role) {
@@ -92,6 +123,10 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 		return false;
 	}
 
+	/**
+	 * @param $role
+	 * @return mixed
+     */
 	public function assignRole($role)
 	{
 
@@ -99,6 +134,10 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 
 	}
 
+	/**
+	 * @param $role
+	 * @return mixed
+     */
 	public function removeRole($role)
 	{
 
@@ -106,6 +145,11 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 
 	}
 
+	/**
+	 * @param $query
+	 * @param $search
+	 * @return mixed
+     */
 	public function scopeSearch($query, $search)
 	{
 		return $query->where(function($query) use ($search)

@@ -27,7 +27,7 @@
         			<div class="col-md-6 col-sm-6">
         		        <div class="service-item">
         		            <div class="icon">
-        		                <a href="#"><i class="fa fa-ticket"></i></a>
+        		                <a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-ticket"></i></a>
         		            </div>
         		            <a href="#"><h4>Compra la teva entrada</h4></a>
         		            <p>L'espectacle es troba actualment al Teatreneu fins al 31/05/2015</p>
