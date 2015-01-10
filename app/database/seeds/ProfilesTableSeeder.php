@@ -7,7 +7,7 @@ class ProfilesTableSeeder extends Seeder {
 
 	public function run()
 	{
-		$faker = Faker::create();
+		$faker = Faker::create('es_ES');
 
 		/*foreach(range(1, 100) as $index)
 		{

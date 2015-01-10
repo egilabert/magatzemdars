@@ -7,7 +7,7 @@ class SalesTableSeeder extends Seeder {
 
 	public function run()
 	{
-		$faker = Faker::create();
+		$faker = Faker::create('es_ES');
 
 		foreach(range(1, 1) as $index)
 		{

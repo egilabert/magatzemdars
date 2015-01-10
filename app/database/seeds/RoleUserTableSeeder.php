@@ -7,7 +7,7 @@ class RoleUserTableSeeder extends Seeder {
 
 	public function run()
 	{
-		$faker = Faker::create();
+		$faker = Faker::create('es_ES');
 
 		$rolesIds = Role::lists('id');
 		$usersIds = User::lists('id');

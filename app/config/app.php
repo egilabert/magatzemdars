@@ -121,13 +121,12 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
+		
 		'Way\Generators\GeneratorsServiceProvider',
-
 		'Magars\Notifications\NotificationsServiceProvider',
 		'Magars\Newsletters\NewslettersListServiceProvider',
 		'Laracasts\Commander\CommanderServiceProvider',
 		'Laracasts\Validation\ValidationServiceProvider',
-		//'Magars\Search\SearchServiceprovider',
 		'Magars\Repos\Clients\ClientsRepoServiceProvider',
 		'Magars\FlashMessages\FlashMessagesServiceProvider',
 		'Laracasts\Utilities\UtilitiesServiceProvider'

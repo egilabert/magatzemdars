@@ -51,7 +51,7 @@ App::error(function(Exception $exception, $code)
 	Log::error($exception);
 });
 
-App::error(function(Magars\Users\Exceptions\ValidationFailedException $exception)
+App::error(function(Magars\Subscribers\Exceptions\ValidationFailedException $exception)
 {
 	return Redirect::back()->withInput()->withErrors($exception->getErrors());
 });
