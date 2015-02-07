@@ -1,6 +1,7 @@
 <?php namespace Magars\Repos\Clients;
 
 use Client;
+use Auth;
 use Magars\Repos\AbstractDbRepositories;
 
 class DbClientsRepo extends AbstractDbRepositories implements ClientsRepoInterface {
@@ -29,6 +30,7 @@ class DbClientsRepo extends AbstractDbRepositories implements ClientsRepoInterfa
 
   	$client = $this->model->create($data);
 	$client->setPicture($picture);
+	$client->setCreator(Auth::user()->id);
 	$client->save();
 
 	return $client;

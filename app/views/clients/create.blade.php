@@ -74,7 +74,7 @@
 							<small>Telèfons de contacte: </small>
 								<div class="row">
 									<div class="col-md-4">
-										{{ Form::text('phone1', null, ['class'=>'form-control', 'placeholder' => 'Telèfon...', 'required' => 'required']); }}
+										{{ Form::text('phone1', null, ['class'=>'form-control', 'placeholder' => 'Telèfon...']); }}
 										{{ errors_for('phone1', $errors)}}
 									</div>
 									<div class="col-md-4">
@@ -85,7 +85,7 @@
 							<small>Emails de contacte: </small>
 								<div class="row">
 									<div class="col-md-4">
-										{{ Form::email('email1', null, ['class'=>'form-control', 'placeholder' => 'Email...', 'required' => 'required']); }}
+										{{ Form::email('email1', null, ['class'=>'form-control', 'placeholder' => 'Email...']); }}
 										{{ errors_for('email1', $errors)}}
 									</div>
 									<div class="col-md-4">

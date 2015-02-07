@@ -7,7 +7,7 @@ class Client extends \Eloquent implements ClientInterface {
 	protected $morphClass = 'Client';
 
 	// Don't forget to fill this array
-	protected $fillable = ['name', 'contact_name', 'contact_familyname', 'phone1', 'phone2', 'address', 'cp', 'email1', 'email2', 'location', 'country', 'ref', 'picture', 'sector_id', 'type_id', 'last_contact_at', 'last_contract_at'];
+	protected $fillable = ['created_by', 'name', 'contact_name', 'contact_familyname', 'phone1', 'phone2', 'address', 'cp', 'email1', 'email2', 'location', 'country', 'ref', 'picture', 'sector_id', 'type_id', 'last_contact_at', 'last_contract_at'];
 
 	//Relations with the other attached models for every fitxa...
 	public function type()
@@ -134,6 +134,12 @@ class Client extends \Eloquent implements ClientInterface {
 	{
 		
 		$this->picture = $picture;
+	}
+
+	public function setCreator($id)
+	{
+		
+		$this->created_by = $id;
 	}
 
 }
