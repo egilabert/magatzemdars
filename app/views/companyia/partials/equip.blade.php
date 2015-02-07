@@ -87,8 +87,6 @@
         <a href=""><div>Silvia de la Rosa</div></a>
       </div>
 
-      
-
       <div class="col-md-3 text-center equip">
         <div class="border2">
           <a href="#"><div class="circular2 equip7"></div></a>
@@ -129,6 +127,13 @@
           <a href="#"><div class="circular2 equip13"></div></a>
         </div>
         <a href=""><div>Anna Marín</div></a>
+      </div>
+
+      <div class="col-md-3 text-center equip">
+        <div class="border2">
+          <a href="#"><div class="circular2 equip14"></div></a>
+        </div>
+        <a href=""><div>Marta Fons</div></a>
       </div>
 
       

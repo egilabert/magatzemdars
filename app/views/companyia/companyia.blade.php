@@ -58,7 +58,7 @@
 			@include('companyia.partials.equip')
 			<div class="container">
 				<div class="cv not_displayed ">
-					<h3>Pepito Grillo</h3>
+					<h3>Magatzem d'ars</h3>
 					<p>Nascut a Barcelona.... Magatzem d´Ars és una empresa que s’ha creat a partir de l’ esforç i del treball de moltes persones que han col•laborat en aquest projecte i que segueix creixent a pas lent però ferm dins del món artístic. Un grup de persones mogudes per l’amor al teatre i que ha hagut de moure’s a pas de formiga, creixent en relació directa al seu treball. Amb això volem deixar clar que realitzem tots els treballs amb el màxim de cura i que l’únic que tenim, i que ens ha fet créixer, és la feina ben feta que ens a consolidat allà on hem anat</p>
 				</div>
 			</div>

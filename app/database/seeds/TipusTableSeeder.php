@@ -50,7 +50,13 @@ class TipusTableSeeder extends Seeder {
 			Tipu::create([
 				'tipus' => 'Treballador'
 			]);
+
+			Tipu::create([
+				'tipus' => 'Llogater'
+			]);
 		}
 	}
 
 }
+
+    

@@ -248,7 +248,7 @@ list-style-type: none;
     background-position: center;	
 }
 .shadow1 .fons5 {
-	background-image: url("/assets/img/proves2.jpg");	
+	background-image: url("/assets/img/IMG_4173.JPG");	
     background-repeat: no-repeat;
 }
 .shadow1 .fons6 {
@@ -278,26 +278,26 @@ list-style-type: none;
 }
 
 .shadow1 .fons_sala_Gran {
-	background-image: url("/assets/img/sala_gran1.jpg");
+	background-image: url("/assets/img/IMG_4183.JPG");
 	background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .shadow1 .fons_sala_Petita {
-	background-image: url("/assets/img/sala_gran2.jpg");
+	background-image: url("/assets/img/IMG_4191.JPG");
 	background-size: 100%;
     background-position: center;	
 }
 
 .shadow1 .fons_sala_Reunions {
-	background-image: url("/assets/img/sala_petita1.jpg");
+	background-image: url("/assets/img/IMG_4213.JPG");
 	background-size: 100%;
   background-position: center;	
 }
 
 .shadow1 .fons_sala_Actes {
-	background-image: url("/assets/img/sala_petita2.jpg");
+	background-image: url("/assets/img/IMG_4209.JPG");
 	background-size: 100%;
     background-position: center;	
 }
@@ -849,6 +849,12 @@ img.grayscale.disabled {
     background-size: 100%; 
   }
 
+  .equip14 {
+    background: url("/assets/img/companyia/fons1.jpg") no-repeat;
+    background-position: center;
+    background-size: 100%; 
+  }
+
   .equip1:hover {
     background: url("/assets/img/companyia/IMG_3438.JPG") no-repeat;
     background-position: center;
@@ -923,6 +929,12 @@ img.grayscale.disabled {
 
   .equip13:hover {
     background: url("/assets/img/companyia/IMG_3624.JPG") no-repeat;
+    background-position: center; 
+    background-size: 100%;
+  }
+
+  .equip14:hover {
+    background: url("/assets/img/companyia/fons2.jpg") no-repeat;
     background-position: center; 
     background-size: 100%;
   }

@@ -14,9 +14,9 @@ class ClientForm extends FormValidator {
 		'type_id' => 'required',
 		'contact_name' => 'required|alpha_spaces',
 		'contact_familyname' => 'required|alpha_spaces',
-		'phone1' => 'required|numeric',
 		'phone1' => 'numeric',
-		'email1' => 'required|email',
+		'phone1' => 'numeric',
+		'email1' => 'email',
 		'email2' => 'email',
 		'sector_id' => 'required'
 
