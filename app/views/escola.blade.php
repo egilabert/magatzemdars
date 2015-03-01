@@ -14,7 +14,7 @@
 		<div class="col-md-4 col-xs-6">
 			<a href="#professionals" id="professionals_link">
 				<div class="shadow1">
-					<div class="content fons5">
+					<div class="content fons9">
 						Estudis professionals / Formació de l’actor
 					</div>
 				</div>
@@ -23,7 +23,7 @@
 		<div class="col-md-4 col-xs-6">
 			<a href="#infantils" id="infantils_link">
 				<div class="shadow1">
-					<div class="content fons6">
+					<div class="content fons10">
 						Cursos infantils “Apren jugant” 
 					</div>
 				</div>
@@ -32,7 +32,7 @@
 		<div class="col-md-4 col-xs-6">
 			<a href="#juvenils" id="juvenils_link">
 				<div class="shadow1">
-					<div class="content fons7">
+					<div class="content fons11">
 						Cursos juvenils “El teatre és més que un joc” (de 12 a 16 anys)
 					</div>
 				</div>
@@ -41,7 +41,7 @@
 		<div class="col-md-4 col-xs-6">
 			<a href="#adults" id="adults_link">
 				<div class="shadow1">
-					<div class="content fons8">
+					<div class="content fons12">
 						Cursos per adults “Muntem una companyia”
 					</div>
 				</div>
@@ -50,7 +50,7 @@
 		<div class="col-md-4 col-xs-6">
 			<a href="#intensius" id="intensius_link">
 				<div class="shadow1">
-					<div class="content fons9">
+					<div class="content fons13">
 						Intensius / Monogràfics / Tallers
 					</div>
 				</div>
@@ -59,7 +59,7 @@
 		<div class="col-md-4 col-xs-6">
 			<a href="#casals" id="casals_link">
 				<div class="shadow1">
-					<div class="content fons10">
+					<div class="content fons14">
 						Casals  i colònies d’estiu
 					</div>
 				</div>

@@ -232,49 +232,78 @@ list-style-type: none;
 }
 
 .shadow1 .fons1 {
-	background-image: url("/assets/img/proves2.jpg");	
+	background-image: url("/assets/img/Animacions.JPG");
+  background-repeat: no-repeat;
+    background-position: center;  
 }
 .shadow1 .fons2 {
-	background-image: url("/assets/img/promo-3.jpg");	
+	background-image: url("/assets/img/Teambuldings.JPG");
+  background-repeat: no-repeat;
+    background-position: center;  
 }
 .shadow1 .fons3 {
-	background-image: url("/assets/img/promo-3.jpg");
+	background-image: url("/assets/img/sopars emperesa.JPG");
 	background-repeat: no-repeat;
-  background-position: top;	
+    background-position: center;  
 }
 .shadow1 .fons4 {
-	background-image: url("/assets/img/promo-3.jpg");	
+	background-image: url("/assets/img/espectacles a mida.JPG");	
 	background-repeat: no-repeat;
     background-position: center;	
 }
 .shadow1 .fons5 {
-	background-image: url("/assets/img/IMG_4173.JPG");	
+	background-image: url("/assets/img/qui som.JPG");	
     background-repeat: no-repeat;
+    background-position: center;  
 }
 .shadow1 .fons6 {
-	background-image: url("/assets/img/proves6.jpg");
+	background-image: url("/assets/img/com neix.JPG");
     background-repeat: no-repeat;
-    background-position: right;	
+    background-position: center;  
 }
 .shadow1 .fons7 {
-	background-image: url("/assets/img/proves8.jpg");	
+	background-image: url("/assets/img/DSC_0162.JPG");	
     background-repeat: no-repeat;
-    background-position: right;	
+    background-position: center;
 }
 .shadow1 .fons8 {
-	background-image: url("/assets/img/proves3.jpg");	
-    background-position: center;
+	background-image: url("/assets/img/reconeixements.JPG");	
     background-repeat: no-repeat;
+    background-position: center;  
 }
 .shadow1 .fons9 {
-	background-image: url("/assets/img/proves8.jpg");	
-    background-position: center;
+	background-image: url("/assets/img/estudis_profesionals.JPG");	
     background-repeat: no-repeat;
+    background-position: center;   
 }
 .shadow1 .fons10 {
-	background-image: url("/assets/img/proves3.jpg");	
-    background-position: right;
+	background-image: url("/assets/img/Cursos infantils.JPG");	
     background-repeat: no-repeat;
+    background-position: center;  
+}
+
+.shadow1 .fons11 {
+  background-image: url("/assets/img/cursos juvenils.JPG"); 
+    background-repeat: no-repeat;
+    background-position: center;  
+}
+
+.shadow1 .fons12 {
+  background-image: url("/assets/img/cursos x adults.JPG"); 
+    background-repeat: no-repeat;
+    background-position: center;  
+}
+
+.shadow1 .fons13 {
+  background-image: url("/assets/img/DSC_0322.JPG"); 
+    background-repeat: no-repeat;
+    background-position: center;  
+}
+
+.shadow1 .fons14 {
+  background-image: url("/assets/img/casals colonias d'estiu.JPG"); 
+    background-repeat: no-repeat;
+    background-position: center;  
 }
 
 .shadow1 .fons_sala_Gran {
