@@ -49,7 +49,7 @@ class CitesController extends \BaseController {
 		        $month = 'Febrer';
 		        break;
 		    case 3:
-		        $month = 'Mars';
+		        $month = 'Març';
 		        break;
 		    case 4:
 		        $month = 'Abril';
