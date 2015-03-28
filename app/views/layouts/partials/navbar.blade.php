@@ -79,8 +79,9 @@
         @if (Auth::guest())
         <div class="social_icons">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="https://es-es.facebook.com/Magatzemdars" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
-            <li><a href="https://www.youtube.com/user/MAGATZEMDARS" target="_blank"><i class="fa fa-youtube fa-2x"></i></a></li>
+            <li><a href="https://www.facebook.com/pages/Magatzem-dArs/1576001219335229?ref=hl" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCfLOJB7LlkuKMVtqL-ES7Zw" target="_blank"><i class="fa fa-youtube fa-2x"></i></a></li>
+            <li><a href="https://twitter.com/Magatzem_dars" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
             <li><a href="/clients"><i class="fa fa-user fa-2x" target="_blank"></i></a></li>
           </ul>
         </div>
