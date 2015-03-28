@@ -96,6 +96,7 @@
 			</p>
 			<p>	
 				@include('layouts.partials.informat')
+				<a href="mailto:cursos@magatzemdars.com"><h4>Informa't dels cursos</h4></a>
 			</p>
 		</div>
 	</div>
@@ -110,6 +111,7 @@
 			</p>
 			<p>	
 				@include('layouts.partials.informat')
+				<a href="mailto:cursos@magatzemdars.com"><h4>Informa't dels cursos</h4></a>
 			</p>
 		</div>
 	</div>
@@ -124,6 +126,7 @@
 			</p>
 			<p>	
 				@include('layouts.partials.informat')
+				<a href="mailto:cursos@magatzemdars.com"><h4>Informa't dels cursos</h4></a>
 			</p>
 		</div>
 	</div>
@@ -138,6 +141,7 @@
 			</p>
 			<p>	
 				@include('layouts.partials.informat')
+				<a href="mailto:cursos@magatzemdars.com"><h4>Informa't dels cursos</h4></a>
 			</p>
 		</div>
 	</div>
@@ -160,6 +164,7 @@
 			</p>
 			<p>	
 				@include('layouts.partials.informat')
+				<a href="mailto:cursos@magatzemdars.com"><h4>Informa't dels cursos</h4></a>
 			</p>
 		</div>
 	</div>
@@ -172,6 +177,7 @@
 			</p>
 		<p>	
 			@include('layouts.partials.informat')
+			<a href="mailto:cursos@magatzemdars.com"><h4>Informa't dels cursos</h4></a>
 		</p>
 		</div>
 	</div>

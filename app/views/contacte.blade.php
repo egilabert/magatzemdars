@@ -27,9 +27,6 @@
 	<p>Telèfon: 932 541 283</p>
 	<p>Mail: <a href="mailto:escola@magatzemdars.com">escola@magatzemdars.com</a></p>
 	<hr>
-	<p>Horari d’atenció al públic:</p>
-	<p>	De dilluns a dijous, de 10h a 20h</p>
-	<p>	Divendres de 10h a 15h</p>
 	<p>Metro L3 Lesseps</p>
 	<p>FGC Pàdua</p>
 	<p>Autobusos: 22, 74</p>

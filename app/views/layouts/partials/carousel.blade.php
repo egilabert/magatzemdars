@@ -9,30 +9,23 @@
   <div class="carousel-inner" role="listbox">
 
     <div class="item active">
-      <img src="/assets/img/companyia/IMG_3652.JPG" alt="Estupendus!" class="adaptedimg">
+      <img src="/assets/img/Espectacles/IMG_5592.JPG" alt="Blancaneus" class="adaptedimg">
       <div class="carousel-caption">
-        Estupendus!
+        Blancaneus!
       </div>
     </div>
 
     <div class="item">
-      <img src="/assets/img/proves2.jpg" alt="Terrorífics!" class="adaptedimg">
+      <img src="/assets/img/Espectacles/IMG_6007.JPG" alt="Caputxeta!" class="adaptedimg">
       <div class="carousel-caption">
-        Terrorífics!
+        Caputxeta!
       </div>
     </div>
 
     <div class="item">
-      <img src="/assets/img/companyia/IMG_3669.JPG" alt="Guapuuuusssss!!!" class="adaptedimg">
+      <img src="/assets/img/Espectacles/IMG_8464.JPG" alt="Heidi!" class="adaptedimg">
       <div class="carousel-caption">
-        Guapuuuusssss!!!
-      </div>
-    </div>
-
-    <div class="item">
-      <img src="/assets/img/companyia/IMG_3711.JPG" alt="Seriosos!" class="adaptedimg">
-      <div class="carousel-caption">
-        Seriosos!
+        Heidi!
       </div>
     </div>
     
